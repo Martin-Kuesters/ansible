@@ -7,6 +7,6 @@
     ansible_winrm_read_timeout_sec: 1000
   tasks:
     - debug: 
-      msg: test
+        msg: test
     - name: Start Script
       ansible.windows.win_shell: C:\Repos\Exchange\ExchangeOnline.ps1    
