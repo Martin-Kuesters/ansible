@@ -1,3 +1,4 @@
+---
 - hosts: windows10
   gather_facts: no
   vars:
