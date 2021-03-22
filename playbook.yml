@@ -8,5 +8,3 @@
   tasks:
     - debug: 
         msg: test
-    - name: Start Script
-      ansible.windows.win_shell: C:\Repos\Exchange\ExchangeOnline.ps1    
