@@ -14,3 +14,5 @@
   tasks:
     - debug: 
         msg: test
+    - name: Run remote PowerShell Script
+      win_command: powershell.exe -ExecutionPolicy ByPass -File C:\Repos\Exchange\PowerShellService\PowerShellService\PowerShellService\ExchangeOnline.ps1
