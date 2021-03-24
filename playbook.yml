@@ -6,6 +6,7 @@
     ansible_password: "{{ ansible_password }}"
     ansible_connection: winrm
     ansible_winrm_transport: basic
+    ansible_port: 5985
     ansible_winrm_operation_timeout_sec: 900
     ansible_winrm_read_timeout_sec: 1000
   tasks:
