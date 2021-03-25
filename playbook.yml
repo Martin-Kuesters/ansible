@@ -15,7 +15,7 @@
     - debug: 
         msg: test
     - name: Run remote PowerShell Script
-      win_shell: C:\Repos\Exchange\TestStdOut.ps1
+      win_shell: C:\Repos\Exchange\ExchangeOnline.ps1
       register: result        
     - name: Process win_shell output
       set_fact:
