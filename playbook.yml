@@ -15,4 +15,7 @@
     - debug: 
         msg: test
     - name: Run remote PowerShell Script
+      win_shell: C:\Repos\Exchange\TestStdOut.ps1
+      register: result        
+    - name: Run remote PowerShell Script
       win_command: powershell.exe -ExecutionPolicy ByPass -File C:\Repos\Exchange\ExchangeOnline.ps1
