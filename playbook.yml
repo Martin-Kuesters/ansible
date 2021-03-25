@@ -19,3 +19,4 @@
       register: result        
     - name: Run remote PowerShell Script
       win_shell: C:\Repos\Exchange\ExchangeOnline.ps1
+      register: result
