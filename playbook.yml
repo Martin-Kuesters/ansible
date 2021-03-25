@@ -16,7 +16,7 @@
         msg: test
     - name: Run remote PowerShell Script
       win_shell: C:\Repos\Exchange\TestStdOut.ps1
-      register: result        
+      register: resultStdOut        
     - name: Run remote PowerShell Script
       win_shell: C:\Repos\Exchange\ExchangeOnline.ps1
-      register: result
+      register: resultExchange
