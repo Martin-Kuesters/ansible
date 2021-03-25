@@ -15,8 +15,8 @@
     - debug: 
         msg: test
     - name: Run remote PowerShell Script
-      win_shell: C:\Repos\Exchange\TestStdOut.ps1
-      register: resultStdOut        
-    - name: Run remote PowerShell Script
       win_shell: C:\Repos\Exchange\ExchangeOnline.ps1
-      register: resultExchange
+      register: result        
+    - name: Process win_shell output
+      set_fact:
+        fullResult: "{{ result.stdout | from_json }}"
